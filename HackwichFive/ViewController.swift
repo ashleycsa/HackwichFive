@@ -8,13 +8,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+class ViewController: UIViewController
+{
+    //Part 4
+    @IBOutlet weak var firstLabel: UILabel!
+    @IBOutlet weak var secondLabel: UILabel!
+    
+    //Part 6
+    var currentIndex = 0
+    var favoriteFoodArray = ["Shabu Shabu", "Poke", "KBBQ", "Ramen", "Sushi"]
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //Part 5
+        self.firstLabel.text="My Favorite Foods"
+        
     }
 
-
+    //Part 4
+    @IBAction func buttonPressed(_ sender: Any)
+    {
+        //Part 7
+        self.secondLabel.text = favoriteFoodArray[currentIndex]
+    }
+    
 }
 
