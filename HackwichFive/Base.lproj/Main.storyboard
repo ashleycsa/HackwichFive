@@ -43,6 +43,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="buttonLabel" destination="N0q-eQ-MID" id="Rm2-TO-wGV"/>
                         <outlet property="firstLabel" destination="Cug-iD-hyQ" id="k7A-js-SGX"/>
                         <outlet property="secondLabel" destination="mHt-8J-Ibd" id="bU1-53-HFu"/>
                     </connections>
